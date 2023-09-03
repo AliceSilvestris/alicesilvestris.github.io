@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="">
+  <link href="" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="../app/SCSS/Style.css">
+  <title>Booking</title>  
+   
+  
+
+</head>
+<body class="bg-dark text-white">
+<header class="sticky-top">
+
+  <div class="overlay has-fade bg-dark sticky-top"></div>
+
+  <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
+    <div class="container-fluid stick">
+      <a class="navbar-brand text-light" href="../../index.html">MS Tours</a>
+      <button class="navbar-toggler text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">MS Tours</h5>
+          <button type="button-dark" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-dark">
+          <ul class="navbar-nav flex-grow-1 pe-3 ps-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../../about.html">About</a>
+            </li>
+            <li class="nav-item dropdown bg-dark text-light">
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tours
+              </a>
+              <ul class="dropdown-menu bg-dark text-light">
+                <li><a class="dropdown-item bg-dark text-light" href="../../daytours.html">Day Tours</a></li>
+                <li><a class="dropdown-item bg-dark text-light" href="../../Multidaytours.html">Multi Day Tours</a></li>
+                <li><hr class="dropdown-divider bg-dark text-light"></li>
+                <li><a class="dropdown-item bg-dark text-light" href="#">2 day tour</a></li>
+                <li><a class="dropdown-item bg-dark text-light" href="#">7 day tour</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../../Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../../FAQ.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+ 
+ <section class="furtherpages">
+   <p class= "display-4">Booking</p>
+
+   <!--contact form submission-->
+   <form action="https://formsubmit.io/send/e3f9660a-c7f5-44f0-a147-962ed222e704" method="post" class="needs-validation" validate>
+    <div class="row gx-3 gy-2 align-items-left ps-2">
+    <div class="col-sm-3">
+      <label for="validationCustom01" class="form-label"></label>First Name</label>
+      <input type="text" class="form-control is-invalid" name="First Name" id="validationServer01" required>
+      <div class="invalid-feedback">
+        Please Enter First Name
+      </div>
+    </div>
+    <div class="col-sm-3 pb-3">
+      <label for="validationCustom02" class="form-label"></label>Last Name</label>
+      <input type="text" class="form-control is-invalid" name="Last Name" id="validationServer02" required>
+      <div class="invalid-feedback">
+        Please Enter Last Name
+      </div>
+    </div>
+
+  </div>
+  
+    <div class="col-md-4 ps-2 pb-3">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control is-invalid" name="Email" id="validationServerEmail4"  placeholder="example@email.com" required>
+      <div class="invalid-feedback">
+        Please Enter A valid Email
+      </div>
+    </div>
+
+    <!--phone number-->
+    <div class="col-md-4 ps-2 pb-3">
+      <label for="enum" class="form-label">Phone Number:</label>
+      <input name="Phone Number" id="nenum" class="form-control is-invalid" type="tel" pattern="/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/" required>
+      <div class="invalid-feedback">
+        Please enter a valid phone Number
+      </div>
+    </div>
+ 
+
+
+    <div class="col-md-4 ps-2 pb-3">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control is-invalid" name="City" id="inputCity" required>
+      <div class="invalid-feedback">
+        Please Enter your city
+      </div>
+    </div>
+
+    <div class="col-md-4 ps-2 pb-3">
+      <label for="inputtour" class="form-label">Tour Type</label>
+      <select id="inputState" name="Tour Type" class="form-select" onchange="location = this.options[this.selectedIndex].value;">
+        <option selected disabled>Multi day</option>
+      <option value="../../daytours/booking.html">Single day</option>
+      </select>
+    </div>
+
+    <div class="col-md-4 ps-2 pb-3">
+      <label for="inputtour" class="form-label">Tour</label>
+      <select id="inputState" name="Tour" class="form-select">
+        <option>Horses Castles Scenery and Hairy Coos(2days)</option>
+        <option selected>Highlands and Islands with Sheep(4days+)</option>
+      </select>
+    </div>
+    
+    <div class="col-sm-2 ps-2 pb-3">
+      <label for="inputtour" class="form-label">Guests</label>
+      <select id="inputState" name="Guests" class="form-select is-invalid text-center" aria-placeholder="select">
+        <option selected disabled value>Number of guests</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+      </select>
+      <div class="invalid-feedback">
+        Please Select a number of guests
+      </div>
+    </div>
+
+
+  </div>
+     <div class="col-md-6 ps-2 pb-3">
+     <label for="inputtour" class="form-label">Other Information</label>
+     <div class="form-floating">
+       <textarea class="form-control" name="Other Details"  id="floatingInput" style="height: 100px"></textarea>
+       <label for="floatingInput">please enter any other information you require for the tour</label>
+     </div>
+     
+    </div>
+
+  </div>
+
+    <div class="col-12 p-4">
+      <button type="submit" class="btn btn-primary">Submit booking</button>
+    </div>
+  
+  </form>
+ </section>
+
+
+ <footer class="bg-dark text-light">
+  <div class="container gx-4 text-center">
+    
+    <div class="row gx-5 gy-4">
+      <!--blank space-->
+      <div class="col-6 col-sm-4"></div>
+      <div class="col-6 col-sm-4"></div>
+      <div class="col-6 col-sm-4"></div>
+
+      <!--sstart of footer-->
+      <div class="w-100 d-none d-sm"></div>
+      <div class="col-6 col-sm-4">  
+        <a class="footer__logo text-light" href="index.html">
+        <img src="" alt="MSTours" />
+       </a>
+      </div>
+      <div class="col-6 col-sm-4">
+        <a class="text-light" href="about.html">About</a>
+      </div>
+      <div class="col-6 col-sm-4"><h3> Socials</h3></div>
+  
+      <!-- Force next columns to break to new line at md breakpoint and up -->
+      <div class="w-100 d-none d-sm"></div>
+  
+      <div class="col-6 col-sm-4"></div>
+      <div class="col-6 col-sm-4"><a class="text-light" href="contact.html">Contact</a></div>
+      <div class="col-6 col-sm-4"><a class="text-light"><Img src="" alt="social1"/></a></div>
+
+      <div class="w-100 d-none d-sm"></div>
+      <div class="col-6 col-sm-4"></div>
+      <div class="col-6 col-sm-4"><a class="text-light" href="tours.html"><p>tours</p></a></div>
+      <div class="col-6 col-sm-4"><a class="text-light"> <Img src="" alt="social2"/></a></div>
+    </div>
+  
+
+ 
+  </div>
+ </footer>
+
+
+ <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>  
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>  
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"> 
+</script>
+
+
+</body>

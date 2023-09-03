@@ -1,0 +1,29 @@
+
+
+
+//font sizes
+$font-med: 2.25rem;
+$font-small: 1.5rem;
+$font-vsmall: 1rem;
+
+//box margins,sizes,padding
+$margin-colpc: 60px;
+$margin-colmobile: 40px;
+
+$theme-colors: (
+  "dark": rgb(15, 15, 41)
+  "danger":rgb(46, 46, 56)
+  "grey": rgb(77, 77, 78)
+);
+
+$body-bg: #ffffff;
+$body-color: #111;
+
+
+//dark navbar 
+$nav-tabs-link-active-bg:           $body-bg !default;
+
+
+// Bootstrap and its default variables
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
