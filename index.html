@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="">
-    <link href="" rel="stylesheet">
-    
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
- <link rel="stylesheet" href="app/SCSS/Style.css">
-   <title>MSTours</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="app/SCSS/Style.css">
+    <title>MSTours</title>  
     
 
 </head>
@@ -23,9 +21,9 @@
 
   <div class="overlay has-fade bg-dark sticky-top"></div>
 
-  <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
+  <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top p-3">
     <div class="container-fluid stick">
-      <a class="navbar-brand text-light" href="index.html">MS Tours</a>
+      <a class="navbar-brand text-light" href="index.html"><h3>MS Tours</h3></a>
       <button class="navbar-toggler text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,30 +35,29 @@
         <div class="offcanvas-dark">
           <ul class="navbar-nav flex-grow-1 pe-3 ps-3">
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active text-light" aria-current="page" href="index.html"><h4>Home</h4></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="about.html">About</a>
+              <a class="nav-link text-light" href="about.html"><h4>About</h4></a>
             </li>
             <li class="nav-item dropdown bg-dark text-light">
-              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Tours
-              </a>
+              <a class="nav-link dropdown-toggle text-light container-fluid" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <h4>Tours</h4></a>
               <ul class="dropdown-menu bg-dark text-light">
-                <li><a class="dropdown-item bg-dark text-light" href="tours.html">All Tours</a></li>
-                <li><a class="dropdown-item bg-dark text-light" href="daytours.html">Day Tours</a></li>
-                <li><a class="dropdown-item bg-dark text-light" href="Multidaytours.html">Multi Day Tours</a></li>
+                <li><a class="dropdown-item bg-dark text-light" href="tours.html"><h4>All Tours</h4></a></li>
+                <li><a class="dropdown-item bg-dark text-light" href="daytours.html"><h4>Day Tours</h4></a></li>
+                <li><a class="dropdown-item bg-dark text-light" href="Multidaytours.html"><h4>Multi Day Tours</h4></a></li>
                 <li><hr class="dropdown-divider bg-dark text-light"></li>
-                <li><a class="dropdown-item bg-dark text-light" href="Multidaytours/horsescastlessceneryandhairycoos.html">2 day tour</a></li>
-                <li><a class="dropdown-item bg-dark text-light" href="Multidaytours/highlandsandislandswithsheep.html">4 day+ tour</a></li>
+                <li><a class="dropdown-item bg-dark text-light" href="Multidaytours/horsescastlessceneryandhairycoos.html"><h4>2 day tour</h4></a></li>
+                <li><a class="dropdown-item bg-dark text-light" href="Multidaytours/highlandsandislandswithsheep.html"><h4>4 day+ tour</h4></a></li>
               </ul>
             </li>
     
             <li class="nav-item">
-              <a class="nav-link text-light" href="Contact.html">Contact</a>
+              <a class="nav-link text-light" href="Contact.html"><h4>Contact</h4></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="FAQ.html">FAQ</a>
+              <a class="nav-link text-light" href="FAQ.html"><h4>FAQ</h4></a>
             </li>
           </ul>
         </div>
@@ -74,9 +71,13 @@
 <section class="bg-dark">
   
 <!--topimage with text ontop-->
- <div class="frontimg text-center">
-  <p class="display-1 text-white">MSTours</p>
+ <div class="vw-100 vh-100 text-center" style="background-image: url(images/fifecastle.jpg); background-size: cover;">
+  <div class="position-absolute top-50 start-50 translate-middle">
+   <p class="display-1 text-white text-center">MSTours</p>
   <p class="text-white">asdasdsd</p> 
+</div>
+
+
  </div>
 
 <!--selection of tours -->
@@ -93,15 +94,22 @@
       <div class="card xxl-3 border-0" style="max-width: 1920px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <a href="tour1.html">
-              <img src="images/backgroundimage.jpg" class="img-fluid rounded-start" alt="...">
+            <a href="daytours/EdinburghandSurrounds.html">
+              <img src="images/edinburghruins.jpg" class="img-fluid rounded-start" alt="...">
             </a>
           </div>
           <div class="col-md-8" >
             <div class="card-body" >
-              <h5 class="card-title">Tour1</h5>
-              <p class="card-text">text describing what the tour is</p>
-              <a href="tour1.html"  class="card-text"><small class="text-body-secondary">readmore</small></a>
+              <h5 class="card-title">Edinburgh and Surrounds</h5>
+              <p class="card-text">
+                We start with a drive around Arthur’s Seat before heading to the 15th century Rosslyn Chapel, made famous by the Da Vinci code. 
+                Then we head to the majestic Linlithgow Palace and Blackness Castle before exploring the ancient South Queensferry and its famous bridges. 
+                In the afternoon we can explore Scotland’s largest stately home at Hopetoun House.
+              </p>
+              <p class="card-text">Tour duration approximately 8 hours.</p>
+            </div>
+            <div class="card-footer  bg-transparent  border-0 align-items-left">
+              <a href="daytours/StAndrews.html" class="btn btn-dark">Read More</a>
             </div>
           </div>
         </div>
@@ -114,17 +122,28 @@
       <div class="card xxl-3 border-0" style="max-width: 1920px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <a href="tour1.html">
-              <img src="images/backgroundimage.jpg" class="img-fluid rounded-start" alt="...">
+            <a href="Multidaytours/horsescastlessceneryandhairycoos.html">
+              <img src="images/Stirling/stirlingstatue.jpg" class="img-fluid rounded-start" alt="...">
             </a>
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Tour1</h5>
-              <p class="card-text">text describing what the tour is</p>
-              <a href="tour1.html"  class="card-text"><small class="text-body-secondary">readmore</small></a>
+              <h4 class="card-title">Horses Castles Scenery and Hairy Coos</h4>
+              <p class="card-text">This tour can be tailored to suit but some of the highlights we can visit are:</p>
+              <p class="card-text">      
+                Leave Edinburgh and our first stop is the village of Queensferry. 
+                Next we head to the mighty Stirling Castle and if you are interested in Monty Python or Outlander then Doune Castle is our next stop. 
+                We then head north to explore Glencoe and the Glen Etive area before heading to the Glenfinnan Viaduct made famous in the Harry Potter movies. 
+                Fort William for the evening...
+              </p>
+              <p class="card-text"> tour duration: 2 days
+
+            </div>
+            <div class="card-footer  bg-transparent  border-0 align-items-left">
+              <a href="Multidaytours/horsescastlessceneryandhairycoos.html" class="btn btn-dark">Read More</a>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -134,15 +153,24 @@
       <div class="card xxl-3 border-0" style="max-width: 1920px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <a href="tour1.html">
-              <img src="images/backgroundimage.jpg" class="img-fluid rounded-start" alt="...">
+            <a href="daytours/StAndrews.html">
+              <img src="images/standrewsstreet.jpg" class="img-fluid rounded-start" alt="...">
             </a>
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Tour1</h5>
-              <p class="card-text">text describing what the tour is</p>
-              <a href="tour1.html"  class="card-text"><small class="text-body-secondary">readmore</small></a>
+              <h5 class="card-title">St Andrews</h5>
+              <p class="card-text"></p>
+              It’s not just the golf on offer here as the ancient Abbey, Castle and the University buildings make it a memorable day. 
+              You can also take a walk over the Swilcan Bridge. 
+              On heading back to Edinburgh why not make a stop at the stunning Falkland Palace, a onetime home to the Stewart Kings and Queens. 
+              If you wish, we can also take you to the Kingsbarns Distillery or offer the Eden Mill Gin tour.
+            </p>
+              <p class="card-text">Tour duration approximately  8 -9 hours</p>
+
+            </div>
+            <div class="card-footer  bg-transparent  border-0">
+              <a href="daytours/StAndrews.html" class="btn btn-dark">Read More</a>
             </div>
           </div>
         </div>
@@ -151,13 +179,13 @@
   </div>
 
   <!--previous button-->
-  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+  <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
 
   <!--next button-->
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+  <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
