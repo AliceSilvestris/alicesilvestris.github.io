@@ -23,6 +23,7 @@
     "balanced-match": "^1.0.2",
     "bootstrap": "^4.6.0",
     "bootstrap-datepicker": "^1.10.0",
+    "bootstrap-icons": "^1.11.0",
     "brace-expansion": "^1.1.11",
     "browserslist": "^4.21.9",
     "buffer-from": "^1.1.2",

@@ -1,3 +1,6 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
 .has-fade {
     visibility: hidden;
 }
@@ -60,4 +63,8 @@
 
 .slide-right {
     animation: slideright 200ms ease-in-out 
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }

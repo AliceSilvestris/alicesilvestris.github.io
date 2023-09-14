@@ -1,12 +1,14 @@
 import "bootstrap";
+import { Dropdown } from "bootstrap";
 import "Style";
 const btnhamburger = document.querySelector('#btnhamburger');
+const Dropdown = document.querySelector('#btnhamburger');
 const body = document.querySelector('body')
 const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
 const fadeElems= document.querySelectorAll('.has-fade');
 
-btnhamburger.addEventListener('click', function(){
+Dropdown.addEventListener('click', function(){
     console.log('click hamburger');
 
     if(header.classList.contains('open')){//menu closed
@@ -28,3 +30,7 @@ btnhamburger.addEventListener('click', function(){
     }
     
 });
+
+$(function(){
+    $('#datepicker').datepicker();
+  });
