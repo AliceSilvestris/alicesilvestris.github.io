@@ -58,7 +58,7 @@
 div{
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 10px 10px 10px #00000060;
+    box-shadow: 0px 10px 20px #000000e1;
    }
    
    .card {
@@ -73,5 +73,27 @@ div{
     animation: fade-in 1000ms ease-in-out forwards;    
 }
 
+.placeholder-image {
+    background-color: black;
+    img {
+        opacity: 0;
+      }
+   
+}
 
+@keyframes scale-anim {
+    from {
+        scale: 0.1;
+    }
+    1%{
+        scale: 0.1;
+    }
+    to {
+        scale: 1.0;
+    }
+}
+
+ .scale-anim {
+    animation: scale-anim 600ms ease-in-out forwards;
+ }
 
