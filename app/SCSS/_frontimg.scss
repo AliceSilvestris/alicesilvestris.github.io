@@ -1,3 +1,18 @@
+@keyframes text-anim {
+    from {
+        background-size: 0%;;
+    }
+    1%{
+        background-size: 0%;;
+    }
+    to {
+        background-size: 100%;;
+    }
+    
+    
+
+}
+
 .frontimg{   
     background-image:url('../../images/fifecastle.jpg');
     background-repeat: no-repeat;
@@ -7,6 +22,8 @@
     margin-left: auto;
     padding-left: auto;
     object-fit: contain;
+    animation: text-anim 500ms ease-in-out forwards;
+    
  }
 
  

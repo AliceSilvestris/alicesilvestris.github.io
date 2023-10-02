@@ -1,6 +1,6 @@
 import "bootstrap";
 import { Dropdown } from "bootstrap";
-import "Style";
+import "app/scss/Style";
 const btnhamburger = document.querySelector('#btnhamburger');
 const Dropdown = document.querySelector('#btnhamburger');
 const body = document.querySelector('body')
@@ -33,4 +33,18 @@ Dropdown.addEventListener('click', function(){
 
 $(function(){
     $('#datepicker').datepicker();
+  });
+
+  const inViewport = (entries, observer) => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+    });
+  };
+  
+  const Obs = new IntersectionObserver(inViewport);
+  const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+  
+  // Attach observer to every [data-inviewport] element:
+  document.querySelectorAll('[data-inviewport]').forEach(el => {
+    Obs.observe(el, obsOptions);
   });
