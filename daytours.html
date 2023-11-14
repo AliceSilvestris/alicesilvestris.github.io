@@ -16,8 +16,8 @@
 
 </head>
 
-<body class="bg-dark">
-  <header class="sticky-top">
+<body class="bg-dark" >
+  <header class="sticky-top border-bottom border-secondary">
 
     <div class="overlay has-fade bg-dark sticky-top"></div>
   
@@ -84,15 +84,17 @@
       
       <!--endinburgh card-->
       <div class="col-sm-4 sm-4 mb-sm-6 p-3">
-        <div class="card border-0 scale-anim " style="width: auto;">
+        <div class="card border-0 scale-anim" style="width: auto;">
+          <div class="card-header border-0 p-0 placeholder placeholder-wave placeholder-image">
           <a href="daytours/EdinburghandSurrounds.html">
           <img src="images/edinburghcity.jpg" class="card-img-top" alt="...">
+        </div>
         </a>
           <div class="card-body">
-            <h5 class="card-title">Edinburgh and Surrounds</h5>
-            <p class="card-text">Tour duration approximately 8 hours.</p>
+            <h5 class="card-title border-0 p-0 placeholder placeholder-wave">Edinburgh and Surrounds</h5>
+            <p class="card-text placeholder col placeholder-wave">Tour duration approximately 8 hours.</p>
           </div>
-          <div class="card-footer  bg-transparent  border-0">
+          <div class="card-footer bg-transparent border-0">
             <a href="daytours/EdinburghandSurrounds.html" class="btn btn-dark">Find Out More</a>
           </div>
         </div>
@@ -101,12 +103,14 @@
       <!--stirling and lock lomond card-->
       <div class="col-sm-4 p-3">
         <div class="card border-0 scale-anim" style="width: 100%; height: 100%">
+          <div class="card-header border-0 p-0 placeholder placeholder-wave placeholder-image">
           <a href="daytours/StirlingandLochLomond.html">
             <img src="images/Stirling/stirlingstatue.jpg" class="card-img-top" alt="...">
           </a>
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Stirling and Loch Lomond</h5>
-            <p class="card-text">Tour duration approximately  8 -9 hours.</p>
+            <h5 class="card-title placeholder placeholder-wave">Stirling and Loch Lomond</h5>
+            <p class="card-text placeholder col placeholder-wave">Tour duration approximately  8 -9 hours.</p>
           </div>
           <div class="card-footer  bg-transparent  border-0">
             <a href="daytours/StirlingandLochLomond.html" class="btn btn-dark">Find Out More</a>
@@ -116,12 +120,14 @@
       <!--St Andrews card-->
       <div class="col-sm-4 p-3">
         <div class="card border-0 scale-anim" style="width: 100%; height: 100%">
+          <div class="card-header border-0 p-0 placeholder placeholder-wave placeholder-image">
           <a href="daytours/StAndrews.html">
           <img src="images/standrewsstreet.jpg" class="card-img-top" alt="...">
         </a>
+      </div>
           <div class="card-body">
-            <h5 class="card-title">St Andrews</h5>
-            <p class="card-text">Tour duration approximately  8 -9 hours
+            <h5 class="card-title placeholder placeholder-wave">St Andrews</h5>
+            <p class="card-text placeholder col placeholder-wave">Tour duration approximately  8 -9 hours
             </p>
           </div>
           <div class="card-footer  bg-transparent  border-0">
@@ -135,12 +141,14 @@
         <!--Glencoe card-->
       <div class="col-sm-4 p-3">
         <div class="card border-0 scale-anim" style="width: 100%; height: 100%">
+          <div class="card-header border-0 p-0 placeholder placeholder-wave placeholder-image">
           <a href="daytours/Glencoe.html">
           <img src="images/tree carving.jpg" class="card-img-top" alt="...">
         </a>
+        </div>
           <div class="card-body">
-            <h5 class="card-title">Glencoe</h5>
-            <p class="card-text">Tour duration: 9-10 hours
+            <h5 class="card-title placeholder placeholder-wave">Glencoe</h5>
+            <p class="card-text placeholder col placeholder-wave">Tour duration: 9-10 hours
             </p>
 
           </div>
@@ -152,12 +160,14 @@
         <!--Scottish borders card-->
       <div class="col-sm-4 p-3">
         <div class="card border-0 scale-anim" style="width: 100%; height: 100%;">
+        <div class="card-header border-0 p-0 placeholder placeholder-wave placeholder-image">
           <a href="daytours/ScottishBorders.html">
           <img  src="images/borders.jpg" class="card-img-top h-100" alt="...">
         </a>
+        </div>
           <div class="card-body">
-            <h5 class="card-title">Scottish Borders</h5>
-            <p class="card-text">Tour duration approximately  8 -9 hours.
+            <h5 class="card-title placeholder placeholder-wave">Scottish Borders</h5>
+            <p class="card-text placeholder col placeholder-wave">Tour duration approximately  8 -9 hours.
             </p>
           </div>
           <div class="card-footer  bg-transparent  border-0">
@@ -213,8 +223,31 @@
   </div>
  </footer>
 
-
+ <script
+ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+ ></script>
  <script src="/app/JS/script.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"> 
  </script>
+    <script> 
+      function loader(){
+        let card = document.querySelectorAll('.placeholder');
+        card.forEach(checkcard =>{
+          checkcard.classList.remove('placeholder');
+          checkcard.classList.remove('placeholder-image');
+          checkcard.classList.remove('placeholder-wave');
+          checkcard.classList.remove('col');
+  
+        })
+        let btn = document.querySelectorAll('.placeholder');
+        card.forEach(checkbtn =>{
+          checkbtn.classList.remove('placeholder');
+          checkbtn.classList.remove('placeholder-image');
+          checkbtn.classList.remove('placeholder-wave');
+          checkbtn.classList.remove('col');
+  
+        })
+      }
+      </script>
+ <!-- MDB -->
 </body>
