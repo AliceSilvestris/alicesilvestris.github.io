@@ -1,12 +1,17 @@
+@import "animations";
+
 @keyframes text-anim {
     from {
         background-size: 0%;
+        opacity: 0;
     }
     1%{
         background-size: 0%;
+        opacity: 0;
     }
     to {
         background-size: 100%;
+        opacity: 1;
     }
     
     
@@ -22,7 +27,7 @@
     margin-left: auto;
     padding-left: auto;
     object-fit: contain;
-    animation: text-anim 500ms ease-in-out forwards;
+    animation: slidein-anim 800ms ease-in-out forwards;
     
  }
 
