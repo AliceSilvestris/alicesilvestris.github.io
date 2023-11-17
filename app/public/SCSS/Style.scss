@@ -1,9 +1,8 @@
 @import "variables";
-@import "mixins";
-@import "animations";
-@import "globals";
-@import "frontimg";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "animations";
+@import "frontimg";
+
 
  
 @media (min-width: 768px) {

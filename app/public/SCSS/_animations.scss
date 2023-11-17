@@ -1,61 +1,5 @@
-@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
-
-
-.has-fade {
-    visibility: hidden;
-}
-
-@keyframes fade-in {
-    from {
-        visibility: hidden;
-        opacity: 0;
-    }
-    1%{
-        visibility: visible;
-        opacity: 0; 
-    }
-    to{
-        visibility: visible;
-        opacity: 1;
-    }
-
-
-}
-.fade-in {
-    animation: fade-in 200ms ease-in-out forwards;  
-}
-
-@keyframes fade-out {
-    from {
-        visibility: visible;
-        opacity: 1;
-    }
-    99%{
-        visibility: visible;
-        opacity: 0;  
-    }
-    to{
-        visibility: hidden;
-        opacity: 0;
-    }
-
-
-}
-
-.fade-out {
-    animation: fade-out 200ms ease-in-out forwards;  
-}
-
-.slide-right {
-    animation: slideright 200ms ease-in-out 
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-
 div{
+
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0px 10px 20px #000000e1;
@@ -85,29 +29,9 @@ div{
     }
 }
 
-@-webkit-keyframes scale-anim {
-    from {
-        -webkit-scale: 0.1;
-    }
-    1%{
-        -webkit-scale: 0.1;
-    }
-    to {
-        -webkit-scale: 1.0;
-    }
-}
 
  .scale-anim {
-    visibility:visible;
-    -webkit-animation-name: scale-anime;
-    animation-name: scale-anim;
-    animation-duration: 600ms ease-in-out forwards;
- }
 
- .nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  color: #495057;
-  background-color: #495057;
-  border-color: #dee2e6 #dee2e6 #495057;
-}
+    animation: scale-anim 600ms ease-in-out forwards;
+ }
 
