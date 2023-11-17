@@ -1,4 +1,5 @@
 @import "variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "animations";
 @import "frontimg";
 
@@ -51,5 +52,4 @@
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
 }
-
 
