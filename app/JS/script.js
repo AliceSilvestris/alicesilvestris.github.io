@@ -1,6 +1,7 @@
 import "bootstrap";
 import { Dropdown } from "bootstrap";
-import "app/scss/Style";
+import "../public/SCSS/style";
+
 const btnhamburger = document.querySelector('#btnhamburger');
 const Dropdown = document.querySelector('#btnhamburger');
 const body = document.querySelector('body')

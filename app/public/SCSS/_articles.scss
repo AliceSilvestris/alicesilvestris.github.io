@@ -1,0 +1,133 @@
+.articles {
+
+
+    @include breakpoints-up(large){
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,3fr);
+        grid-template-areas:
+           "eventscol links1 link2" 
+           "eventscol2 links12 links22";
+         justify-items: start;
+    }
+
+ &__eventscol {
+  @include breakpoints-up(large){
+    margin: $margin-colpc;
+   grid-area: eventscol;
+ }
+}
+
+ &__aboutscol {
+    
+    background-color: $purpleblue;
+    
+    
+   @include breakpoints-up(large){
+       grid-area: links1;
+       margin: $margin-colpc;
+      }
+ }
+
+ &__infoscol {
+    display: inline-block;
+    background-color: $purpleblue;
+    
+
+   @include breakpoints-up(large){
+       grid-area: link2;
+       margin: $margin-colpc;
+      }
+ }
+
+ &__socialscol {
+    display: inline-block;
+    background-color: $purpleblue;
+    
+   @include breakpoints-up(large){
+       grid-area: eventscol2;
+       margin: $margin-colpc;
+      }
+ }
+ 
+ &__supportscol {
+    display: inline-block;
+    background-color: $purpleblue;
+    
+   @include breakpoints-up(large){
+       grid-area: links12;
+       margin: $margin-colpc;
+      }
+
+ }
+
+ &__toursscol {
+    display: inline-block;
+    background-color: $purpleblue;
+    
+   @include breakpoints-up(large){
+       grid-area: links22;
+       margin: $margin-colpc;
+      }
+ }
+
+ .col-box {
+  display: inline-block;
+  color: white;
+  font-size: $font-small;
+  background-color: $purpleblue;
+  border-radius: 10px;
+  transition: box-shadow 200ms ease-in-out;
+
+    &:hover {
+     box-shadow: 10px 10px rgba(0, 0, 0, 0.438);
+
+     }
+  
+  p{
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin:0px
+  }
+
+  footer{
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin:0px;
+    text-align: end;
+    color: $lightgrayish;
+    font-size: $font-vsmall; 
+  }
+
+ @include breakpoints-up(large){
+     margin: $margin-colpc;
+     width: 450px;
+     
+     img{
+       background-color: $purpleblue;
+      border-top-left-radius:10px;
+      border-top-right-radius: 10px;
+      width: 450px;
+      height: fit-content;
+    }
+
+    }
+
+ @include breakpoints-down(medium){
+     margin: $margin-colmobile;
+     width: 350px;
+
+    img{
+      border-top-left-radius:10px;
+      border-top-right-radius: 10px;
+      width: 350px;
+    }
+ }
+
+ }
+}
+
+
+

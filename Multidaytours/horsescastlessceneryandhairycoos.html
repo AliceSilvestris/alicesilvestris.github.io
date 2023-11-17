@@ -8,14 +8,18 @@
     <link href="" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../app/SCSS/Style.css">
-    <title>2 day tours</title>  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="..app/public/SCSS/Style.scss">
+    <link rel="stylesheet" href="..app/public/SCSS/Style.css">
+    <link rel="stylesheet" href="..app/public/SCSS/_animations.scss">
+    <title>Two Day Tour</title>  
     
 
 </head>
 
 <body class="bg-dark text-light">
-  <header class="sticky-top">
+  <!--navbar-->
+  <header class="sticky-top border-bottom border-secondary">
 
     <div class="overlay has-fade bg-dark sticky-top"></div>
   
@@ -40,12 +44,12 @@
               </li>
               <li class="nav-item dropdown bg-dark text-light">
                 <a class="nav-link dropdown-toggle text-light container-fluid" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <h4>Tours</h4>
-                </a>
-                <ul class="dropdown-menu bg-dark text-light">
+                  <h4>Tours</h4></a>
+                <ul class="dropdown-menu bg-dark text-light dropdown-menu animate slideIn ">
                   <li><a class="dropdown-item bg-dark text-light" href="../tours.html"><h4>All Tours</h4></a></li>
                   <li><a class="dropdown-item bg-dark text-light" href="../daytours.html"><h4>Day Tours</h4></a></li>
                   <li><a class="dropdown-item bg-dark text-light" href="../Multidaytours.html"><h4>Multi Day Tours</h4></a></li>
+                  <li><a class="dropdown-item bg-dark text-light" href="../WhiskeyTour.html"><h4>Whiskey Tours</h4></a></li>
                   <li><hr class="dropdown-divider bg-dark text-light"></li>
                   <li><a class="dropdown-item bg-dark text-light" href="../Multidaytours/horsescastlessceneryandhairycoos.html"><h4>2 day tour</h4></a></li>
                   <li><a class="dropdown-item bg-dark text-light" href="../Multidaytours/highlandsandislandswithsheep.html"><h4>4 day+ tour</h4></a></li>
@@ -57,6 +61,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="../FAQ.html"><h4>FAQ</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="../Reviews.html"><h4>Reviews</h4></a>
               </li>
             </ul>
           </div>
@@ -75,14 +82,14 @@
   <ol class="breadcrumb bg-dark text-light p-4">
     <li class="breadcrumb-item"><a href="../tours.html">Tours</a></li>
     <li class="breadcrumb-item"><a href="../Multidaytours.html">Multi day Tours</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Four Day Tour or More</li>
+    <li class="breadcrumb-item active" aria-current="page">Two Day Tour</li>
   </ol>
 </nav>
 
  <section class="furtherpages">
   <!--description of tour-->
-   <h1 class="display-4 p-3"><b><u>Horses Castles Scenery and Hairy Coos</u></b></h1>
-    <p class="p-3"></p>
+   <h1 class="display-4 p-3"><b><u>Castles, Whisky and Magnificent Scenery</u></b></h1>
+    <p class="p-3">Below are some suggestions for your 2 days. The tour can be tailored to suit you.</p>
 
   <!--intenary-->
 
@@ -92,7 +99,7 @@
    <p class="p-3">This tour can be tailored to suit but some of the highlights we can visit are:</p>
    
    <nav class="p-5">
-    <div class="nav nav-tabs nav-active-light" id="nav-tab" role="tablist">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
       <button class="nav-link active text-light" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Day 1</button>
       <button class="nav-link text-light" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Day 2</button>
     </div>
@@ -100,18 +107,17 @@
    <div class="tab-content px-5" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
      <p>
-      Leave Edinburgh and our first stop is the village of Queensferry. 
-      Next we head to the mighty Stirling Castle and if you are interested in Monty Python or Outlander then Doune Castle is our next stop. 
-      We then head north to explore Glencoe and the Glen Etive area before heading to the Glenfinnan Viaduct made famous in the Harry Potter movies. 
-      Fort William for the evening.
+      Leaving Edinburgh we head to our first stop, the village of Queensferry. A pitstop at the Kelpies, on our way to the magnificent Stirling Castle. 
+      Doune Castle is next for those with an interest in Monty Python or Outlander. Perhaps a stop for lunch as we head northwards to Glencoe and Glen Etive,
+       before reaching Fort William for the evening.
     </p>
     </div>
 
    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
     <p>
-       We head to Spean Bridge for views of Ben Nevis before returning south through the Cairngorms National Park.
-       We can visit Blair Castle and even take in a Highlands whisky tour. 
-       A stop at Pitlochry before returning to Edinburgh.
+      After breakfast we head to the Glenfinnan Viaduct made famous in the Harry Potter movies. 
+      Next on your journey we travel to Spean Bridge for spectacular views of Ben Nevis before a whisky tour at Dalwhinnie Distillery. 
+      We now head south through the Cairngorms to take in Blair Castle before stopping at Dunkeld then returning to Edinburgh
     </p>
    </div>
    </div>
@@ -121,11 +127,12 @@
   <div class="p-3">
 
   <p class="p-3">
-    Please note the above is just a guide and the day can be tailored to suit.
+    Price (this price includes the driver / guides hotel accommodation and evening meal)
+
   </p>
 
   <p class="p-3">
-  Prices:
+    1-7 guests £495 per day
   </p>
 </div>
 
@@ -139,44 +146,66 @@
 
  </section>
 
- <footer class="bg-dark text-light">
-  <div class="container gx-4 text-center">
+<!--footer-->
+<section>
+  <footer class="pt-3 bg-dark text-light border-top border-secondary">
+    <div class="container gx-4 text-center">
+      
+      <div class="row gx-5 gy-4">
+        <!--blank space-->
+        <div class="col-6 col-sm-4"></div>
+        <div class="col-6 col-sm-4"></div>
+        <div class="col-6 col-sm-4"></div>
+  
+        <!--sstart of footer-->
+        <div class="w-100 d-none d-sm"></div>
+        <div class="col-6 col-sm-4">  
+          <a class="footer__logo text-light" href="../index.html">
+          <img src="" alt="MSTours" />
+         </a>
+        </div>
+        <div class="col-6 col-sm-4">
+          <a class="text-light" href="../about.html">About</a>
+        </div>
+        <div class="col-6 col-sm-4"><h3><a class="text-light" href="#"></a></h3></div>
     
-    <div class="row gx-5 gy-4">
-      <!--blank space-->
-      <div class="col-6 col-sm-4"></div>
-      <div class="col-6 col-sm-4"></div>
-      <div class="col-6 col-sm-4"></div>
-
-      <!--sstart of footer-->
-      <div class="w-100 d-none d-sm"></div>
-      <div class="col-6 col-sm-4">  
-        <a class="footer__logo text-light" href="index.html">
-        <img src="" alt="MSTours" />
-       </a>
-      </div>
-      <div class="col-6 col-sm-4">
-        <a class="text-light" href="about.html">About</a>
-      </div>
-      <div class="col-6 col-sm-4"><h3> Socials</h3></div>
-  
-      <!-- Force next columns to break to new line at md breakpoint and up -->
-      <div class="w-100 d-none d-sm"></div>
-  
-      <div class="col-6 col-sm-4"></div>
-      <div class="col-6 col-sm-4"><a class="text-light" href="contact.html">Contact</a></div>
-      <div class="col-6 col-sm-4"><a class="text-light"><Img src="" alt="social1"/></a></div>
-
-      <div class="w-100 d-none d-sm"></div>
-      <div class="col-6 col-sm-4"></div>
-      <div class="col-6 col-sm-4"><a class="text-light" href="tours.html"><p>tours</p></a></div>
-      <div class="col-6 col-sm-4"><a class="text-light"> <Img src="" alt="social2"/></a></div>
+        <!-- Force next columns to break to new line at md breakpoint and up -->
+        <div class="w-100 d-none d-sm"></div>
+    
+        <div class="col-6 col-sm-4"></div>
+        <div class="col-6 col-sm-4"><a class="text-light" href="mailto:">Contact</a></div>
+        <div class="col-6 col-sm-4"><a class="text-light">
+          <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+        </svg>
+      </a>
     </div>
   
-
- 
-  </div>
- </footer>
+        <div class="w-100 d-none d-sm"></div>
+        <div class="col-6 col-sm-4"></div>
+        <div class="col-6 col-sm-4"><a class="text-light" href="../tours.html"><p>tours</p></a></div>
+        <div class="col-6 col-sm-4"><a class="text-light"> <Img src="" alt="social2"/></a></div>
+      </div>
+    
+  
+   
+    </div>
+   </footer>
+  
+   <div class="p-2 bg-secondary"></div>
+   
+   <footer class="px-1 bg-dark text-light">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark px-3 ">
+      <div class="container-fluid">
+            <ul class="navbar-nav flex-grow-1 px-3">
+                <a class="nav-link active text-light text-start px-3" aria-current="page" href="../TermsAndConditions.html"><p>Terms of service</p></a>
+                <a class="nav-link text-light text-end px-3" href="#"><p>MS tours@2023</p></a>
+            </ul>
+          </div>
+    </nav>
+   </footer>
+  </section>
 
 
  <script src="/app/JS/script.js"></script>
