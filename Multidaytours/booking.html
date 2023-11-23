@@ -78,18 +78,18 @@
    <p class= "display-4">Booking</p>
 
    <!--contact form submission-->
-   <form action="https://formsubmit.io/send/e3f9660a-c7f5-44f0-a147-962ed222e704" method="post" class="needs-validation" validate>
+   <form action="https://formsubmit.io/send/ariknbollo00001110@gmail.com" method="post" class="needs-validation" validate>
     <div class="row gx-3 gy-2 align-items-left ps-2 text-light">
     <div class="col-sm-3">
       <label for="validationCustom01" class="form-label ">First Name</label>
-      <input type="text" class="form-control is-invalid" name="First Name" id="validationServer01" required>
+      <input type="text" class="form-control is-invalid" name="A) First Name" id="validationServer01" required>
       <div class="invalid-feedback">
         Please Enter First Name
       </div>
     </div>
     <div class="col-sm-3 pb-3 ">
       <label for="validationCustom02" class="form-label">Last Name</label>
-      <input type="text" class="form-control is-invalid" name="Last Name" id="validationServer02" required>
+      <input type="text" class="form-control is-invalid" name="B) Last Name" id="validationServer02" required>
       <div class="invalid-feedback">
         Please Enter Last Name
       </div>
@@ -99,7 +99,7 @@
   
     <div class="col-md-4 ps-2 pb-3 text-light">
       <label for="inputEmail4" class="form-label">Email</label>
-      <input type="email" class="form-control is-invalid" name="Email" id="validationServerEmail4"  placeholder="example@email.com" required>
+      <input type="email" class="form-control is-invalid" name="C) Email" id="validationServerEmail4"  placeholder="example@email.com" required>
       <div class="invalid-feedback">
         Please Enter A valid Email
       </div>
@@ -108,7 +108,7 @@
     <!--phone number-->
     <div class="col-md-4 ps-2 pb-3 text-light">
       <label for="enum" class="form-label">Phone Number:</label>
-      <input name="Phone Number" id="nenum" class="form-control is-invalid" type="tel" pattern="/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/" required>
+      <input name="D) Phone Number" id="nenum" class="form-control is-invalid" type="tel" pattern="/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/" required>
       <div class="invalid-feedback">
         Please enter a valid phone Number
       </div>
@@ -118,7 +118,7 @@
 
     <div class="col-md-4 ps-2 pb-3 text-light">
       <label for="inputCity" class="form-label">City</label>
-      <input type="text" class="form-control is-invalid" name="City" id="inputCity" required>
+      <input type="text" class="form-control is-invalid" name="E) City" id="inputCity" required>
       <div class="invalid-feedback">
         Please Enter your city
       </div>
@@ -126,7 +126,7 @@
 
     <div class="col-md-4 ps-2 pb-3 text-light">
       <label for="inputtour" class="form-label">Tour Type</label>
-      <select id="inputState" name="Tour Type" class="form-select" onchange="location = this.options[this.selectedIndex].value;">
+      <select id="inputState" name="F) Tour Type" class="form-select" onchange="location = this.options[this.selectedIndex].value;">
         <option selected>Multi day</option>
       <option value="../daytours/booking.html">Single day</option>
       </select>
@@ -134,7 +134,7 @@
 
     <div class="col-md-4 ps-2 pb-3 text-light">
       <label for="inputtour" class="form-label">Tour</label>
-      <select id="inputState" name="Tour" class="form-select" >
+      <select id="inputState" name="G) Tour" class="form-select" >
         <option disabled selected>Select a Tour</option>
         <option>Horses Castles Scenery and Hairy Coos(2days)</option>
         <option>Highlands and Islands with Sheep(4days+)</option>
@@ -143,7 +143,7 @@
     
     <div class="col-sm-2 ps-2 pb-3 text-light">
       <label for="inputtour" class="form-label">Guests</label>
-      <select id="inputState" name="Guests" class="form-select is-invalid text-center" aria-placeholder="select">
+      <select id="inputState" name="H) Guests" class="form-select is-invalid text-center" aria-placeholder="select">
         <option selected disabled value>Number of guests</option>
         <option>1</option>
         <option>2</option>
@@ -160,19 +160,35 @@
     </div>
 
     <div class="col-sm-2 ps-2 pb-3">
-    <label for="inputtour" class="form-label text-light">Starting Date</label>
-    <input id="datepicker" name="Start Date" width="276" />
-    <script>
-        $('#datepicker').datepicker({
-            uiLibrary: 'bootstrap5'
-        });
-    </script>
+      <label for="startdate" class="text-light">Start Date </label>
+      <input name="I) Start Date" type="text" id="StartDate" class="form-control bg-light" data-provide="datepicker" data-date-start-date="-45d" data-date-end-date="0d" required>
+      <label for="EndDate">End Date </label>
+      <input name="J) End Date" type="text" id="EndDate" class="form-control bg-light" data-provide="datepicker" data-date-start-date="-45d" data-date-end-date="0d" required>
+      <script>
+        $("#StartDate").datepicker({
+         autoclose: true,
+         uiLibrary: 'bootstrap5',
+        }).on('changeDate', function (selected) {
+          var minDate = new Date(selected.date.valueOf());
+        $('#EndDate').datepicker('setStartDate', minDate);
+    });
+
+      $("#EndDate").datepicker({
+    autoclose: true,
+    uiLibrary: 'bootstrap5',
+  }).on('changeDate', function (selected) {
+    var minDate = new Date(selected.date.valueOf());
+    $('#StartDate').datepicker('setEndDate', minDate);
+  });
+      </script>
   </div>
+
+  
   </div>
      <div class="col-md-6 ps-2 pb-3 text-light">
      <label for="inputtour" class="form-label">Other Information</label>
      <div class="form-floating">
-       <textarea class="form-control" name="Other Details"  id="floatingInput" style="height: 100px"></textarea>
+       <textarea class="form-control" name="K) Other Details"  id="floatingInput" style="height: 100px"></textarea>
        <label for="floatingInput">please enter any other information you require for the tour</label>
      </div>
      

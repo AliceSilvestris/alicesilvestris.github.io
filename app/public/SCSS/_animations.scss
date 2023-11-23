@@ -146,3 +146,15 @@ div{
 
 
  }
+
+
+div:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px #000000e1;
+    div{
+    transition: transform  .4s, box-shadow .4s;
+
+}
+
+
+}

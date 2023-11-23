@@ -78,7 +78,7 @@
    <p class= "display-4">Booking</p>
 
    <!--contact form submission-->
-   <form action="https://formsubmit.io/send/e3f9660a-c7f5-44f0-a147-962ed222e704" method="post" class="needs-validation" validate>
+   <form action="https://formsubmit.io/send/ariknbollo00001110@gmail.com"" method="post" class="needs-validation" validate>
     <div class="row gx-3 gy-2 align-items-left ps-2 text-white">
     <div class="col-sm-3">
       <label for="validationCustom01" class="form-label"></label>First Name</label>
@@ -159,12 +159,26 @@
     </div>
 
     <div class="col-sm-2 ps-2 pb-3">
-      <label for="inputtour" class="form-label text-light">Starting Date</label>
-      <input id="datepicker" name="Start Date" width="276" />
+      <label for="startdate" class="text-light">Start Date </label>
+      <input  type="text" id="StartDate" class="form-control bg-light" data-provide="datepicker" data-date-start-date="-45d" data-date-end-date="0d">
+      <label for="EndDate">End Date </label>
+      <input  type="text" id="EndDate" class="form-control bg-light" data-provide="datepicker" data-date-start-date="-45d" data-date-end-date="0d">
       <script>
-          $('#datepicker').datepicker({
-              uiLibrary: 'bootstrap5'
-          });
+        $("#StartDate").datepicker({
+         autoclose: true,
+         uiLibrary: 'bootstrap5',
+        }).on('changeDate', function (selected) {
+          var minDate = new Date(selected.date.valueOf());
+        $('#EndDate').datepicker('setStartDate', minDate);
+    });
+
+      $("#EndDate").datepicker({
+    autoclose: true,
+    uiLibrary: 'bootstrap5',
+  }).on('changeDate', function (selected) {
+    var minDate = new Date(selected.date.valueOf());
+    $('#StartDate').datepicker('setEndDate', minDate);
+  });
       </script>
     </div>
 
