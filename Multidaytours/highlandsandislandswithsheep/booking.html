@@ -18,9 +18,9 @@
   
 
 </head>
-<body class="bg-dark text-white">
+<body class="bg-dark ">
   <!--navbar-->
-  <header class="sticky-top border-bottom border-secondary">
+  <header class="sticky-top border-bottom border-secondary text-white">
 
     <div class="overlay has-fade bg-dark sticky-top"></div>
   
@@ -87,7 +87,7 @@
   <h1 class="p-5 display-4  d-block  d-md-none text-center text-light"><b>Booking</b></h1>
 
    <!--contact form submission-->
-   <form action="https://formsubmit.io/send/ariknbollo00001110@gmail.com"" method="post" class="needs-validation" validate>
+   <form action="https://formsubmit.io/send/info@mstours.co.uk" method="post" class="needs-validation" validate>
     
     <div class="col-md-4 ps-2 pb-3 text-light">
       <label for="inputtour" class="form-label">Tour Type</label>
@@ -172,9 +172,9 @@
 
     <div class="col-sm-2 ps-2 pb-3">
       <label for="startdate" class="text-light">Start Date </label>
-      <input  type="text" id="StartDate" name="I) Start Date"  class="form-control bg-light" data-provide="datepicker" data-date-start-date="-45d" data-date-end-date="0d">
-      <label for="EndDate">End Date </label>
-      <input  type="text" id="EndDate" name="J) End Date"  class="form-control bg-light" data-provide="datepicker" data-date-start-date="-45d" data-date-end-date="0d">
+      <input  type="text" id="StartDate" name="I) Start Date"  class="form-control bg-light text-dark" data-provide="datepicker" data-date-start-date="-45d" data-date-end-date="0d">
+      <label for="EndDate" class="text-light">End Date </label>
+      <input  type="text" id="EndDate" name="J) End Date"  class="form-control bg-light text-dark" data-provide="datepicker" data-date-start-date="-45d" data-date-end-date="0d">
       <script>
         $("#StartDate").datepicker({
          autoclose: true,
@@ -207,10 +207,28 @@
   </div>
 
     <div class="col-12 p-4">
-      <button type="submit" class="btn btn-light">Submit booking</button>
+      <button type="" class="btn btn-light" id="liveToastBtn">Submit booking</button>
     </div>
-  
+    
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="...">
+          <strong class="me-auto">Email Submitted</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Thank you. your Booking Request has been made we will get back to you with additonal Details as soon as possible
+        </div>
+      </div>
+    </div>
+    
+
+
   </form>
+
+
+  
  </section>
 
 
