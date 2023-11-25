@@ -43,6 +43,8 @@
               <li class="nav-item">
                 <a class="nav-link text-light" href="../about.html"><h4>About</h4></a>
               </li>
+  
+              <!--tour-->
               <li class="nav-item dropdown bg-dark text-light">
                 <a class="nav-link dropdown-toggle text-light container-fluid" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <h4>Tours</h4></a>
@@ -50,7 +52,7 @@
                   <li><a class="dropdown-item bg-dark text-light" href="../tours.html"><h4>All Tours</h4></a></li>
                   <li><a class="dropdown-item bg-dark text-light" href="../daytours.html"><h4>Day Tours</h4></a></li>
                   <li><a class="dropdown-item bg-dark text-light" href="../Multidaytours.html"><h4>Multi Day Tours</h4></a></li>
-                  <li><a class="dropdown-item bg-dark text-light" href="../WhiskeyTour.html"><h4>Whiskey Tours</h4></a></li>
+                  <!--<li><a class="dropdown-item bg-dark text-light" href="WhiskeyTour.html"><h4>Whiskey Tours</h4></a></li>-->
                   <li><hr class="dropdown-divider bg-dark text-light"></li>
                   <li><a class="dropdown-item bg-dark text-light" href="../Multidaytours/horsescastlessceneryandhairycoos.html"><h4>2 day tour</h4></a></li>
                   <li><a class="dropdown-item bg-dark text-light" href="../Multidaytours/highlandsandislandswithsheep.html"><h4>4 day+ tour</h4></a></li>
@@ -60,11 +62,17 @@
               <li class="nav-item">
                 <a class="nav-link text-light" href="../Contact.html"><h4>Contact</h4></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="../FAQ.html"><h4>FAQ</h4></a>
-              </li>
+              <!--<li class="nav-item">
+                <a class="nav-link text-light" href="FAQ.html"><h4>FAQ</h4></a>
+              </li>-->
               <li class="nav-item">
                 <a class="nav-link text-light" href="../Reviews.html"><h4>Reviews</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="../gallery.html"><h4>Gallery</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="../TermsAndConditions.html"><h4>T&C</h4></a>
               </li>
             </ul>
           </div>
@@ -75,21 +83,31 @@
    </header>
  
  <section class="furtherpages">
-   <p class= "display-4">Booking</p>
+  <h1 class="p-5 display-3  d-none d-md-block text-center text-light"><b>Booking</b></h1>
+  <h1 class="p-5 display-4  d-block  d-md-none text-center text-light"><b>Booking</b></h1>
 
    <!--contact form submission-->
    <form action="https://formsubmit.io/send/ariknbollo00001110@gmail.com" method="post" class="needs-validation" validate>
+    
+    <div class="col-md-4 ps-2 pb-3 text-light">
+      <label for="inputtour" class="form-label">Tour Type</label>
+      <select id="inputState" name="A) Tour Type" class="form-select" onchange="location = this.options[this.selectedIndex].value;">
+        <option selected>Multi day</option>
+      <option value="../daytours/booking.html">Single day</option>
+      </select>
+    </div>
+    
     <div class="row gx-3 gy-2 align-items-left ps-2 text-light">
     <div class="col-sm-3">
       <label for="validationCustom01" class="form-label ">First Name</label>
-      <input type="text" class="form-control is-invalid" name="A) First Name" id="validationServer01" required>
+      <input type="text" class="form-control is-invalid" name="B) First Name" id="validationServer01" required>
       <div class="invalid-feedback">
         Please Enter First Name
       </div>
     </div>
     <div class="col-sm-3 pb-3 ">
       <label for="validationCustom02" class="form-label">Last Name</label>
-      <input type="text" class="form-control is-invalid" name="B) Last Name" id="validationServer02" required>
+      <input type="text" class="form-control is-invalid" name="C) Last Name" id="validationServer02" required>
       <div class="invalid-feedback">
         Please Enter Last Name
       </div>
@@ -99,7 +117,7 @@
   
     <div class="col-md-4 ps-2 pb-3 text-light">
       <label for="inputEmail4" class="form-label">Email</label>
-      <input type="email" class="form-control is-invalid" name="C) Email" id="validationServerEmail4"  placeholder="example@email.com" required>
+      <input type="email" class="form-control is-invalid" name="D) Email" id="validationServerEmail4"  placeholder="example@email.com" required>
       <div class="invalid-feedback">
         Please Enter A valid Email
       </div>
@@ -108,7 +126,7 @@
     <!--phone number-->
     <div class="col-md-4 ps-2 pb-3 text-light">
       <label for="enum" class="form-label">Phone Number:</label>
-      <input name="D) Phone Number" id="nenum" class="form-control is-invalid" type="tel" pattern="/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/" required>
+      <input name="E) Phone Number" id="nenum" class="form-control is-invalid" type="tel" pattern="/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/" required>
       <div class="invalid-feedback">
         Please enter a valid phone Number
       </div>
@@ -118,19 +136,12 @@
 
     <div class="col-md-4 ps-2 pb-3 text-light">
       <label for="inputCity" class="form-label">City</label>
-      <input type="text" class="form-control is-invalid" name="E) City" id="inputCity" required>
+      <input type="text" class="form-control is-invalid" name="F) City" id="inputCity" required>
       <div class="invalid-feedback">
         Please Enter your city
       </div>
     </div>
 
-    <div class="col-md-4 ps-2 pb-3 text-light">
-      <label for="inputtour" class="form-label">Tour Type</label>
-      <select id="inputState" name="F) Tour Type" class="form-select" onchange="location = this.options[this.selectedIndex].value;">
-        <option selected>Multi day</option>
-      <option value="../daytours/booking.html">Single day</option>
-      </select>
-    </div>
 
     <div class="col-md-4 ps-2 pb-3 text-light">
       <label for="inputtour" class="form-label">Tour</label>
@@ -161,9 +172,9 @@
 
     <div class="col-sm-2 ps-2 pb-3">
       <label for="startdate" class="text-light">Start Date </label>
-      <input name="I) Start Date" type="text" id="StartDate" class="form-control bg-light" data-provide="datepicker" data-date-start-date="-45d" data-date-end-date="0d" required>
+      <input name="I) Start Date" type="text" id="StartDate" name="I) Start Date"  class="form-control bg-light" data-provide="datepicker" data-date-start-date="-45d" data-date-end-date="0d" required>
       <label for="EndDate">End Date </label>
-      <input name="J) End Date" type="text" id="EndDate" class="form-control bg-light" data-provide="datepicker" data-date-start-date="-45d" data-date-end-date="0d" required>
+      <input name="J) End Date" type="text" id="EndDate" name="J) End Date"  class="form-control bg-light" data-provide="datepicker" data-date-start-date="-45d" data-date-end-date="0d" required>
       <script>
         $("#StartDate").datepicker({
          autoclose: true,
@@ -204,8 +215,8 @@
  </section>
 
 
-<!--footer-->
-<section>
+ <!--footer -->
+ <section>
   <footer class="pt-3 bg-dark text-light border-top border-secondary">
     <div class="container gx-4 text-center">
       
@@ -217,33 +228,23 @@
   
         <!--sstart of footer-->
         <div class="w-100 d-none d-sm"></div>
-        <div class="col-6 col-sm-4">  
-          <a class="footer__logo text-light" href="../index.html">
-          <img src="" alt="MSTours" />
-         </a>
-        </div>
-        <div class="col-6 col-sm-4">
-          <a class="text-light" href="../about.html">About</a>
-        </div>
+        
+        <div class="col-6 col-sm-4"><a class="footer__logo text-light" href="../index.html">MS Tours</a></div>
+        <div class="col-6 col-sm-4"><a class="text-light" href="../tours.html">Tours</a></div>
         <div class="col-6 col-sm-4"><h3><a class="text-light" href="#"></a></h3></div>
     
         <!-- Force next columns to break to new line at md breakpoint and up -->
         <div class="w-100 d-none d-sm"></div>
     
-        <div class="col-6 col-sm-4"></div>
-        <div class="col-6 col-sm-4"><a class="text-light" href="mailto:">Contact</a></div>
-        <div class="col-6 col-sm-4"><a class="text-light">
-          <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
-          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-        </svg>
-      </a>
+        <div class="col-6 col-sm-4"><a href="../about.html" class="text-light">About</a></div>
+        <div class="col-6 col-sm-4"><a class="text-light" href="../Multidaytours.html">Multi day Tours</a></div>
+        <div class="col-6 col-sm-4"><a href="../Reviews.html" class="text-light">Reviews</a>
     </div>
   
         <div class="w-100 d-none d-sm"></div>
-        <div class="col-6 col-sm-4"></div>
-        <div class="col-6 col-sm-4"><a class="text-light" href="../tours.html"><p>tours</p></a></div>
-        <div class="col-6 col-sm-4"><a class="text-light"> <Img src="" alt="social2"/></a></div>
+        <div class="col-6 col-sm-4"><a href="../contact.html" class="text-light">Contact</a></div>
+        <div class="col-6 col-sm-4"><a class="text-light" href="../daytours.html"><p>Day Tours</p></a></div>
+        <div class="col-6 col-sm-4"><a href="../gallery.html" class="text-light">Gallery</a></div>
       </div>
     
   
@@ -252,12 +253,12 @@
    </footer>
   
    <div class="p-2 bg-secondary"></div>
-   
+  
    <footer class="px-1 bg-dark text-light">
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark px-3 ">
       <div class="container-fluid">
             <ul class="navbar-nav flex-grow-1 px-3">
-                <a class="nav-link active text-light text-start px-3" aria-current="page" href="../TermsAndConditions.html"><p>Terms of service</p></a>
+                <a class="nav-link active text-light text-start px-3" aria-current="page" href="../TermsAndConditions.html"><p>Terms And Conditions</p></a>
                 <a class="nav-link text-light text-end px-3" href="#"><p>MS tours@2023</p></a>
             </ul>
           </div>
