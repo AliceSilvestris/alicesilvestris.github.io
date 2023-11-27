@@ -62,9 +62,9 @@
               <li class="nav-item">
                 <a class="nav-link text-light" href="Contact.html"><h4>Contact</h4></a>
               </li>
-              <!--<li class="nav-item">
-                <a class="nav-link text-light" href="FAQ.html"><h4>FAQ</h4></a>
-              </li>-->
+            <li class="nav-item">
+              <a class="nav-link text-light" href="FAQ.html"><h4>FAQ</h4></a>
+            </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="Reviews.html"><h4>Reviews</h4></a>
               </li>
@@ -89,9 +89,11 @@
 
 
    <!--contact form submission-->
+   <div class="row row-md-cols-2">
+    <div class="col-md-7">
    <form action="https://formsubmit.io/send/info@mstours.co.uk" method="post" class="needs-validation px-md-5" validate>
-
-    <div class="col-md-4 ps-2 pb-5 text-light">
+    <input name="_redirect" type="hidden" id="name" value="https://alicesilvestris.github.io/Thankyou.html">
+    <div class="col-md-7 ps-2 pb-5 text-light">
       <label for="inputtour" class="form-label">Tour Type</label>
       <select id="inputState" name="A) Tour Type" class="form-select" onchange="location = this.options[this.selectedIndex].value;">
         <option selected disabled value>Select a Tour Type</option>
@@ -103,14 +105,14 @@
     <div class="row gx-3 gy-2 align-items-left ps-2 text-light">
       
 
-    <div class="col-sm-3">
+    <div class="col-sm-5">
       <label for="validationCustom01" class="form-label ">First Name</label>
       <input type="text" class="form-control is-invalid" name="B) First Name" id="validationServer01" required>
       <div class="invalid-feedback">
         Please Enter First Name
       </div>
     </div>
-    <div class="col-sm-3 pb-3 ">
+    <div class="col-sm-5 pb-3 ">
       <label for="validationCustom02" class="form-label">Last Name</label>
       <input type="text" class="form-control is-invalid" name="C) Last Name" id="validationServer02" required>
       <div class="invalid-feedback">
@@ -120,7 +122,7 @@
 
   </div>
   
-    <div class="col-md-4 ps-2 pb-3 text-light">
+    <div class="col-md-6 ps-2 pb-3 text-light">
       <label for="inputEmail4" class="form-label">Email</label>
       <input type="email" class="form-control is-invalid" name="D) Email" id="validationServerEmail4"  placeholder="example@email.com" required>
       <div class="invalid-feedback">
@@ -129,7 +131,7 @@
     </div>
 
     <!--phone number-->
-    <div class="col-md-4 ps-2 pb-3 text-light">
+    <div class="col-md-6 ps-2 pb-3 text-light">
       <label for="enum" class="form-label">Phone Number:</label>
       <input name="E) Phone Number" id="nenum" class="form-control is-invalid" type="tel" pattern="/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/" required>
       <div class="invalid-feedback">
@@ -137,9 +139,7 @@
       </div>
     </div>
  
-
-
-    <div class="col-md-4 ps-2 pb-3 text-light">
+    <div class="col-md-6 ps-2 pb-3 text-light">
       <label for="inputCity" class="form-label">City</label>
       <input type="text" class="form-control is-invalid" name="F) City" id="inputCity" required>
       <div class="invalid-feedback">
@@ -147,8 +147,7 @@
       </div>
     </div>
 
-
-    <div class="col-md-4 ps-2 pb-3 text-light">
+    <div class="col-md-6 ps-2 pb-3 text-light">
       <label for="inputtour" class="form-label">Tour</label>
       <select id="inputState" name="G) Tour" class="form-select" >
         <option disabled selected>Select a Tour</option>
@@ -157,7 +156,7 @@
       </select>
     </div>
     
-    <div class="col-sm-2 ps-2 pb-3 text-light">
+    <div class="col-sm-3 ps-2 pb-3 text-light">
       <label for="inputtour" class="form-label">Guests</label>
       <select id="inputState" name="H) Guests" class="form-select is-invalid text-center" aria-placeholder="select">
         <option selected disabled value>Number of guests</option>
@@ -175,7 +174,6 @@
       </div>
     </div>
 
-  </div>
      <div class="col-md-6 ps-2 pb-3 text-light">
      <label for="inputtour" class="form-label">Other Information</label>
      <div class="form-floating">
@@ -185,46 +183,64 @@
      
     </div>
 
-  </div>
 
     <div class="col-12 p-4">
       <button type="submit" class="btn btn-light">Submit booking</button>
     </div>
   
   </form>
+
+    </div>
+    <div class="col-3 m-0 text-light">
+      <div class="card- border-0 bg-dark">
+        <div class="card-header border-0">
+          <h3>Contact Information</h4>
+        </div>
+        <div class="card-body border-0">
+          <h5>Email: info@mstours.co.uk</h5>
+          <h5>Phone Number: +447813120634</h5>
+          
+        </div>
+      </div>
+      </div>
+</div>
  </section>
 
 
  <!--footer -->
  <section>
-  <footer class="pt-3 bg-dark text-light border-top border-secondary">
-    <div class="container gx-4 text-center">
+  <footer class="pt-3 bg-dark text-light border-top border-secondary d-none d-md-block">
+    <div class="container gx-2 text-center">
       
-      <div class="row gx-5 gy-4">
+      <div class="row row-col-2 gx-2 gy-4">
         <!--blank space-->
-        <div class="col-6 col-sm-4"></div>
-        <div class="col-6 col-sm-4"></div>
-        <div class="col-6 col-sm-4"></div>
+    
+        <div class="col-6 col-sm-3"></div>
+        <div class="col-6 col-sm-3"></div>
+        <div class="col-6 col-sm-3"></div>
+        <div class="col-6 col-sm-3"></div>
   
         <!--sstart of footer-->
+  
         <div class="w-100 d-none d-sm"></div>
-        
-        <div class="col-6 col-sm-4"><a class="footer__logo text-light" href="index.html">MS Tours</a></div>
-        <div class="col-6 col-sm-4"><a class="text-light" href="tours.html">Tours</a></div>
-        <div class="col-6 col-sm-4"><h3><a class="text-light" href="#"></a></h3></div>
+        <div class="col-6 col-sm-3"><a class="footer__logo text-light" href="index.html">contact Info:</a></div>
+        <div class="col-6 col-sm-3"><a class="footer__logo text-light" href="index.html">MS Tours</a></div>
+        <div class="col-6 col-sm-3"><a class="text-light" href="tours.html">Tours</a></div>
+        <div class="col-6 col-sm-3"><h3><a class="text-light" href="#"></a></h3></div>
     
         <!-- Force next columns to break to new line at md breakpoint and up -->
         <div class="w-100 d-none d-sm"></div>
-    
-        <div class="col-6 col-sm-4"><a href="about.html" class="text-light">About</a></div>
-        <div class="col-6 col-sm-4"><a class="text-light" href="Multidaytours.html">Multi day Tours</a></div>
-        <div class="col-6 col-sm-4"><a href="Reviews.html" class="text-light">Reviews</a>
+        <div class="col-6 col-sm-3"><a class="footer__logo text-light" href="index.html">info@mstours.co.uk</a></div>
+        <div class="col-6 col-sm-3"><a href="about.html" class="text-light">About</a></div>
+        <div class="col-6 col-sm-3"><a class="text-light" href="Multidaytours.html">Multi day Tours</a></div>
+        <div class="col-6 col-sm-3"><a href="Reviews.html" class="text-light">Reviews</a>
     </div>
   
         <div class="w-100 d-none d-sm"></div>
-        <div class="col-6 col-sm-4"><a href="contact.html" class="text-light">Contact</a></div>
-        <div class="col-6 col-sm-4"><a class="text-light" href="daytours.html"><p>Day Tours</p></a></div>
-        <div class="col-6 col-sm-4"><a href="gallery.html" class="text-light">Gallery</a></div>
+        <div class="col-6 col-sm-3"><a class="footer__logo text-light" href="index.html">+447813120634</a></div>
+        <div class="col-6 col-sm-3"><a href="contact.html" class="text-light">Contact</a></div>
+        <div class="col-6 col-sm-3"><a class="text-light" href="daytours.html"><p>Day Tours</p></a></div>
+        <div class="col-6 col-sm-3"><a href="gallery.html" class="text-light">Gallery</a></div>
       </div>
     
   
