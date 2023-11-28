@@ -86,7 +86,10 @@
   <h1 class="p-5 display-4  d-block  d-md-none text-center text-light"><b>Booking</b></h1>
 
    <!--contact form submission-->
-  <form action="https://formsubmit.io/send/info@mstours.co.uk" method="post" class="needs-validation" validate>
+   <div class="mx-4">
+    <div class="row row-cols-1 row-md-cols-2">
+     <div class="col-md-7">
+  <form action="https://formsubmit.io/send/info@mstours.co.uk" method="post" class="needs-validation px-md-5" validate>
     <input name="_redirect" type="hidden" id="name" value="https://alicesilvestris.github.io/Thankyou.html">
     <div class="col-md-4 ps-2 pb-3 text-light">
       <label for="inputtour" class="form-label">Tour Type</label>
@@ -96,15 +99,15 @@
       </select>
     </div>
     
-    <div class="row gx-3 gy-2 align-items-left ps-2 text-light">
-    <div class="col-sm-3">
+    <div class="row gx-2 gy-2 align-items-left ps-2 text-light">
+    <div class="col-md-5">
       <label for="validationCustom01" class="form-label"></label>First Name</label>
       <input type="text" class="form-control is-invalid" name="B) First Name" id="validationServer01" required>
       <div class="invalid-feedback">
         Please Enter First Name
       </div>
     </div>
-    <div class="col-sm-3 pb-3 text-light">
+    <div class="col-md-5 pb-3 text-light">
       <label for="validationCustom02" class="form-label"></label>Last Name</label>
       <input type="text" class="form-control is-invalid" name="C) Last Name" id="validationServer02" required>
       <div class="invalid-feedback">
@@ -114,7 +117,7 @@
 
   </div>
   
-    <div class="col-md-4 ps-2 pb-3 text-light">
+    <div class="col-md-6 ps-2 pb-3 text-light">
       <label for="inputEmail4" class="form-label">Email</label>
       <input type="email" class="form-control is-invalid" name="D) Email" id="validationServerEmail4"  placeholder="example@email.com" required>
       <div class="invalid-feedback">
@@ -123,7 +126,7 @@
     </div>
 
     <!--phone number-->
-    <div class="col-md-4 ps-2 pb-3 text-light">
+    <div class="col-md-6 ps-2 pb-3 text-light">
       <label for="enum" class="form-label">Phone Number:</label>
       <input name="E) Phone Number" id="nenum" class="form-control is-invalid" type="tel" pattern="/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/" required>
       <div class="invalid-feedback">
@@ -133,7 +136,7 @@
  
 
 
-    <div class="col-md-4 ps-2 pb-3 text-light">
+    <div class="col-md-6 ps-2 pb-3 text-light">
       <label for="inputCity" class="form-label">City</label>
       <input type="text" class="form-control is-invalid" name="F) City" id="inputCity" required>
       <div class="invalid-feedback">
@@ -141,7 +144,7 @@
       </div>
     </div>
 
-    <div class="col-md-4 ps-2 pb-3 text-light">
+    <div class="col-md-6 ps-2 pb-3 text-light">
       <label for="inputtour" class="form-label">Tour</label>
       <select id="inputState" name="G) Tour" class="form-select">
         <option selected>Edinburgh and Surrounds</option>
@@ -152,7 +155,7 @@
       </select>
     </div>
     
-    <div class="col-sm-2 ps-2 pb-3 text-light">
+    <div class="col-sm-3 ps-2 pb-3 text-light">
       <label for="inputtour" class="form-label">Guests</label>
       <select id="inputState" name="H) Guests" class="form-select is-invalid text-center" aria-placeholder="select">
         <option selected disabled value>Number of guests</option>
@@ -170,7 +173,7 @@
       </div>
     </div>
 
-    <div class="col-sm-2 ps-2 pb-3">
+    <div class="col-sm-3 ps-2 pb-3">
       <label for="startdate" class="text-light">Start Date </label>
       <input  type="text" id="StartDate" name="I) Start Date"  class="form-control bg-light" data-provide="datepicker" data-date-start-date="-45d" data-date-end-date="0d">
       <script>
@@ -200,7 +203,23 @@
       <button type="submit" class="btn btn-light">Submit booking</button>
     </div>
   
-  </form>
+    </form>
+
+    </div>
+    <div class="col-md-3 m-0 text-light">
+      <div class="card- border-0 bg-dark">
+        <div class="card-header border-0">
+          <h3>Contact Information</h4>
+        </div>
+        <div class="card-body border-0 mx-0">
+          <h5>Email: info@mstours.co.uk</h5>
+          <h5>Phone Number: Mike +447813120634</h5>
+          
+        </div>
+      </div>
+      </div>
+</div>
+</div>
  </section>
 
  <!--footer -->
