@@ -1,212 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="">
-    <link href="" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="" />
+    <link href="" rel="stylesheet" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="app/public/SCSS/Style.css">
-    <title>4 day tours</title>  
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app/public/SCSS/Style.css" />
+    <title>4 day tours</title>
+  </head>
 
-</head>
+  <body class="bg-dark text-light">
+    <header class="sticky-top">
+      <div class="overlay has-fade bg-dark sticky-top"></div>
 
-<body class="bg-dark text-light">
-  <header class="sticky-top">
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
+        <div class="container-fluid stick">
+          <a class="navbar-brand text-light" href="index.html">MS Tours</a>
+          <button
+            class="navbar-toggler text-light"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-start bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">
+                MS Tours
+              </h5>
+              <button
+                type="button-dark"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-dark">
+              <ul class="navbar-nav flex-grow-1 pe-3 ps-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown bg-dark text-light">
+                  <a
+                    class="nav-link dropdown-toggle text-light"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Tours
+                  </a>
+                  <ul class="dropdown-menu bg-dark text-light">
+                    <li>
+                      <a
+                        class="dropdown-item bg-dark text-light"
+                        href="daytours.html"
+                        >Day Tours</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item bg-dark text-light"
+                        href="Multidaytours.html"
+                        >Multi Day Tours</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider bg-dark text-light" /></li>
+                    <li>
+                      <a class="dropdown-item bg-dark text-light" href="#"
+                        >2 day tour</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item bg-dark text-light" href="#"
+                        >7 day tour</a
+                      >
+                    </li>
+                  </ul>
+                </li>
 
-    <div class="overlay has-fade bg-dark sticky-top"></div>
-  
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
-      <div class="container-fluid stick">
-        <a class="navbar-brand text-light" href="index.html">MS Tours</a>
-        <button class="navbar-toggler text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">MS Tours</h5>
-            <button type="button-dark" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="Contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="../FAQ.html">FAQ</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="offcanvas-dark">
-            <ul class="navbar-nav flex-grow-1 pe-3 ps-3">
-              <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="about.html">About</a>
-              </li>
-              <li class="nav-item dropdown bg-dark text-light">
-                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tours
-                </a>
-                <ul class="dropdown-menu bg-dark text-light">
-                  <li><a class="dropdown-item bg-dark text-light" href="daytours.html">Day Tours</a></li>
-                  <li><a class="dropdown-item bg-dark text-light" href="Multidaytours.html">Multi Day Tours</a></li>
-                  <li><hr class="dropdown-divider bg-dark text-light"></li>
-                  <li><a class="dropdown-item bg-dark text-light" href="#">2 day tour</a></li>
-                  <li><a class="dropdown-item bg-dark text-light" href="#">7 day tour</a></li>
-                </ul>
-              </li>
-      
-              <li class="nav-item">
-                <a class="nav-link text-light" href="Contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="../FAQ.html">FAQ</a>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <img
+        src="images/green-mountains-of-glencoe-in-the-scottish-highlands.jpg"
+        class="img-fluid"
+        alt=""
+      />
+    </section>
+
+    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+      <ol class="breadcrumb bg-dark text-light p-4">
+        <li class="breadcrumb-item"><a href="../tours.html">Tours</a></li>
+        <li class="breadcrumb-item">
+          <a href="../Multidaytours.html">Multi day Tours</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Two Day Tour or More
+        </li>
+      </ol>
+    </nav>
+
+    <section class="furtherpages">
+      <!--description of tour-->
+      <h1 class="display-4 p-3">
+        <b><u>Highlands and Islands with sheep</u></b>
+      </h1>
+      <p class="p-3"></p>
+
+      <!--intenary-->
+
+      <!--timeline-->
+      <div>
+        <h3 class="p-3">Timeline of tour</h3>
+        <p class="p-3">
+          This tour can be tailored to suit but some of the highlights we can
+          visit are:
+        </p>
+
+        <nav class="p-5">
+          <div
+            class="nav nav-tabs nav-active-light"
+            id="nav-tab"
+            role="tablist"
+          >
+            <button
+              class="nav-link active text-light"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              Day 1
+            </button>
+            <button
+              class="nav-link text-light"
+              id="nav-profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-profile"
+              type="button"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+            >
+              Day 2
+            </button>
+            <button
+              class="nav-link text-light"
+              id="nav-contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-contact"
+              type="button"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+            >
+              Day 3
+            </button>
+            <button
+              class="nav-link text-light"
+              id="nav-disabled-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-disabled"
+              type="button"
+              role="tab"
+              aria-controls="nav-disabled"
+              aria-selected="false"
+            >
+              Day 4
+            </button>
+          </div>
+        </nav>
+        <div class="tab-content px-5" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+            tabindex="0"
+          >
+            <ul>
+              <li class="p-3">South Queensferry</li>
+              <li class="p-3">Stirling Castle</li>
+              <li class="p-3">Doune Castle (Outlander)</li>
+              <li class="p-3">Glen Etive</li>
+              <li class="p-3">Glencoe and Fort William.</li>
+            </ul>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+            tabindex="0"
+          >
+            <ul>
+              <li class="p-3">Neptune’s Staircase</li>
+              <li class="p-3">Glenfinnan Viaduct</li>
+              <li class="p-3">Road to the Isles</li>
+              <li class="p-3">Silver Sands of Morar</li>
+              <li class="p-3">Sail to Skye</li>
+              <li class="p-3">Explore Southern part of the Island</li>
+            </ul>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="nav-contact"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+            tabindex="0"
+          >
+            <ul>
+              <li class="p-3">Old Man of Storr</li>
+              <li class="p-3">Kilt Rock, Quiraing</li>
+              <li class="p-3">Black Cottages</li>
+              <li class="p-3">Fairy Glen</li>
+              <li class="p-3">Talisker Distillery</li>
+              <li class="p-3">Dunvegan Castle</li>
+            </ul>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-disabled"
+            role="tabpanel"
+            aria-labelledby="nav-disabled-tab"
+            tabindex="0"
+          >
+            <ul>
+              <li class="p-3">Leave Skye</li>
+              <li class="p-3">visiting Eilean Donan Castle</li>
+              <li class="p-3">
+                Ratagan Pass, Loch Ness and Dalwhinnie Whisky Distillery
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </nav>
-  
-   </header>
 
- <section>
-  <img src="images/green-mountains-of-glencoe-in-the-scottish-highlands.jpg" class="img-fluid" alt="">
+      <!--extentsion-->
+      <div>
+        <p class="pt-5 p-3">
+          If wishing to extend this tour beyond 4 days then this allows us to
+          get to even more of Scotland’s stunning scenery. Areas such as
+          Inverness to visit Culloden Battlefield and the Clava Cairns or why
+          not explore more of our islands such as Mull, Iona, Orkney or even the
+          Outer Hebrides.
+        </p>
 
- </section>
+        <p class="p-3 h5">
+          <strong>
+            Please note the above is just a guide and the day can be tailored to
+            suit.
+          </strong>
+        </p>
 
- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-  <ol class="breadcrumb bg-dark text-light p-4">
-    <li class="breadcrumb-item"><a href="../tours.html">Tours</a></li>
-    <li class="breadcrumb-item"><a href="../Multidaytours.html">Multi day Tours</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Two Day Tour or More</li>
-  </ol>
-</nav>
-
- <section class="furtherpages">
-  <!--description of tour-->
-   <h1 class="display-4 p-3"><b><u>Highlands and Islands with sheep</u></b></h1>
-    <p class="p-3"></p>
-
-  <!--intenary-->
-
-  <!--timeline-->
-  <div>
-   <h3 class="p-3">Timeline of tour</h3>
-   <p class="p-3">This tour can be tailored to suit but some of the highlights we can visit are:</p>
-   
-   <nav class="p-5">
-    <div class="nav nav-tabs nav-active-light" id="nav-tab" role="tablist">
-      <button class="nav-link active text-light" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Day 1</button>
-      <button class="nav-link text-light" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Day 2</button>
-      <button class="nav-link text-light" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Day 3</button>
-      <button class="nav-link text-light" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Day 4</button>
-    </div>
-  </nav>
-  <div class="tab-content px-5" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-     <ul>
-      <li class="p-3">South Queensferry</li>
-      <li class="p-3">Stirling Castle</li>
-      <li class="p-3">Doune Castle (Outlander)</li>
-      <li class="p-3">Glen Etive</li>
-      <li class="p-3">Glencoe and Fort William.</li>
-     </ul>
-    </div>
-
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-      <ul>
-        <li class="p-3">Neptune’s Staircase</li>
-        <li class="p-3">Glenfinnan Viaduct</li>
-        <li class="p-3">Road to the Isles</li>
-        <li class="p-3">Silver Sands of Morar</li>
-        <li class="p-3">Sail to Skye</li>
-        <li class="p-3">Explore Southern part of the Island</li>
-      </ul>
-    </div>
-
-    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-     <ul>
-        <li class="p-3">Old Man of Storr</li>
-        <li class="p-3">Kilt Rock, Quiraing</li>
-        <li class="p-3">Black Cottages</li>
-        <li class="p-3">Fairy Glen</li>
-        <li class="p-3">Talisker Distillery</li>
-        <li class="p-3">Dunvegan Castle</li>
-     </ul>
-    </div>
-    <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
-      <ul>
-        <li class="p-3">Leave Skye</li>
-        <li class="p-3">visiting Eilean Donan Castle</li>
-        <li class="p-3">Ratagan Pass, Loch Ness and Dalwhinnie Whisky Distillery</li>
-      </ul>
-    </div>
-  </div>
-  </div>
-
-  <!--extentsion-->
-  <div>
-  <P class="pt-5 p-3">
-    If wishing to extend this tour beyond 4 days then this allows us to get to even more of Scotland’s stunning scenery. Areas such as Inverness to visit Culloden Battlefield and the Clava Cairns or why not explore more of our islands such as Mull, Iona, Orkney or even the Outer Hebrides.  
-  </P>
-
-  <p class="p-3 h5"><strong>
-    Please note the above is just a guide and the day can be tailored to suit.
-  </strong></p>
-
-  <p class="p-3">
-  Prices:
-  </p>
-</div>
-
-
-  <!--booking-->
- <div class="p-5">
-  <a class="btn-lg btn-light" href="booking page multiday tour.html" role="button">booking</a>
-
- </div>
-
-
- </section>
-
- <footer class="bg-dark text-light">
-  <div class="container gx-4 text-center">
-    
-    <div class="row gx-5 gy-4">
-      <!--blank space-->
-      <div class="col-6 col-sm-4"></div>
-      <div class="col-6 col-sm-4"></div>
-      <div class="col-6 col-sm-4"></div>
-
-      <!--sstart of footer-->
-      <div class="w-100 d-none d-sm"></div>
-      <div class="col-6 col-sm-4">  
-        <a class="footer__logo text-light" href="index.html">
-        <img src="" alt="MSTours" />
-       </a>
+        <p class="p-3">Prices:</p>
       </div>
-      <div class="col-6 col-sm-4">
-        <a class="text-light" href="about.html">About</a>
+
+      <!--booking-->
+      <div class="p-5">
+        <a
+          class="btn-lg btn-light"
+          href="booking page multiday tour.html"
+          role="button"
+          >booking</a
+        >
       </div>
-      <div class="col-6 col-sm-4"><h3> Socials</h3></div>
-  
-      <!-- Force next columns to break to new line at md breakpoint and up -->
-      <div class="w-100 d-none d-sm"></div>
-  
-      <div class="col-6 col-sm-4"></div>
-      <div class="col-6 col-sm-4"><a class="text-light" href="contact.html">Contact</a></div>
-      <div class="col-6 col-sm-4"><a class="text-light"><Img src="" alt="social1"/></a></div>
+    </section>
 
-      <div class="w-100 d-none d-sm"></div>
-      <div class="col-6 col-sm-4"></div>
-      <div class="col-6 col-sm-4"><a class="text-light" href="tours.html"><p>tours</p></a></div>
-      <div class="col-6 col-sm-4"><a class="text-light"> <Img src="" alt="social2"/></a></div>
-    </div>
-  
+    <footer class="bg-dark text-light">
+      <div class="container gx-4 text-center">
+        <div class="row gx-5 gy-4">
+          <!--blank space-->
+          <div class="col-6 col-sm-4"></div>
+          <div class="col-6 col-sm-4"></div>
+          <div class="col-6 col-sm-4"></div>
 
- 
-  </div>
- </footer>
+          <!--sstart of footer-->
+          <div class="w-100 d-none d-sm"></div>
+          <div class="col-6 col-sm-4">
+            <a class="footer__logo text-light" href="index.html">
+              <img src="" alt="MSTours" />
+            </a>
+          </div>
+          <div class="col-6 col-sm-4">
+            <a class="text-light" href="about.html">About</a>
+          </div>
+          <div class="col-6 col-sm-4"><h3>Socials</h3></div>
 
+          <!-- Force next columns to break to new line at md breakpoint and up -->
+          <div class="w-100 d-none d-sm"></div>
 
- <script src="/app/JS/script.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"> 
-</script>
+          <div class="col-6 col-sm-4"></div>
+          <div class="col-6 col-sm-4">
+            <a class="text-light" href="Contact.html">Contact</a>
+          </div>
+          <div class="col-6 col-sm-4">
+            <a class="text-light"><img src="" alt="social1" /></a>
+          </div>
 
-</body>
+          <div class="w-100 d-none d-sm"></div>
+          <div class="col-6 col-sm-4"></div>
+          <div class="col-6 col-sm-4">
+            <a class="text-light" href="tours.html"><p>tours</p></a>
+          </div>
+          <div class="col-6 col-sm-4">
+            <a class="text-light"> <img src="" alt="social2" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/app/JS/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
