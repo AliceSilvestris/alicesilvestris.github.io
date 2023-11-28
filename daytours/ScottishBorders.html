@@ -136,8 +136,10 @@
                   >
                 </li>
                 <li class="nav-item">
-                <a class="nav-link text-light" href="../FAQ.html"><h4>FAQ</h4></a>
-              </li>
+                  <a class="nav-link text-light" href="../FAQ.html"
+                    ><h4>FAQ</h4></a
+                  >
+                </li>
                 <li class="nav-item">
                   <a class="nav-link text-light" href="../Reviews.html"
                     ><h4>Reviews</h4></a
@@ -162,7 +164,7 @@
       </nav>
     </header>
 
-    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb" class="d-none d-md-block">
       <ol class="breadcrumb bg-dark text-light p-4">
         <li class="breadcrumb-item"><a href="../tours.html">Tours</a></li>
         <li class="breadcrumb-item">
@@ -173,7 +175,14 @@
         </li>
       </ol>
     </nav>
-    <section style="height: 700px" class="overflow-hidden">
+    <section style="height: 700px" class="overflow-hidden d-none d-md-block">
+      <img
+        src="../images/borders.jpg"
+        class="mh-25 w-100 position-relative top-50 start-50 translate-middle"
+        alt=""
+      />
+    </section>
+    <section style="height: 300px" class="overflow-hidden d-block d-md-none">
       <img
         src="../images/borders.jpg"
         class="mh-25 w-100 position-relative top-50 start-50 translate-middle"
@@ -183,7 +192,8 @@
 
     <section class="furtherpages">
       <!--description of tour-->
-      <h1 class="display-3 p-5"><b>Scottish Borders</b></h1>
+      <h1 class="display-3 p-5 d-none d-md-block text-center"><b>Scottish Borders</b></h1>
+      <h1 class="display-4 pt-5 px-3 d-block d-md-none text-center"><b>Scottish Borders</b></h1>
       <h3 class="p-5"><b>A day to remember with Monks, Lords and Poets</b></h3>
       <!--(50%)
     <p class="p-5 h4 w-50 d-none d-md-block">
@@ -204,8 +214,8 @@
 
       <!--prices-->
       <div class="pt-md-5 px-md-5 px-4 h3">
-        <h2>Price (does not include entry to attractions)</h2>
-        <p>1-7 guests £450</p>
+        <p>Price(total for 1 or 7 guests)</p>
+        <p>1-7 guests £450(does not include entry to attractions)</p>
       </div>
 
       <div class="px-md-5 p-4 h3">
@@ -225,58 +235,90 @@
 
     <!--footer -->
     <section>
-      <footer class="pt-3 bg-dark text-light border-top border-secondary d-none d-md-block">
+      <footer
+        class="pt-3 bg-dark text-light border-top border-secondary d-none d-md-block"
+      >
         <div class="container gx-2 text-center">
-          
           <div class="row row-col-2 gx-2 gy-4">
             <!--blank space-->
-        
+
             <div class="col-6 col-sm-3"></div>
             <div class="col-6 col-sm-3"></div>
             <div class="col-6 col-sm-3"></div>
             <div class="col-6 col-sm-3"></div>
-      
+
             <!--sstart of footer-->
-      
+
             <div class="w-100 d-none d-sm"></div>
-            <div class="col-6 col-sm-3"><a class="footer__logo text-light" href="">contact Info:</a></div>
-            <div class="col-6 col-sm-3"><a class="footer__logo text-light" href="../index.html">MS Tours</a></div>
-            <div class="col-6 col-sm-3"><a class="text-light" href="../tours.html">Tours</a></div>
-            <div class="col-6 col-sm-3"><h3><a class="text-light" href="#"></a></h3></div>
-        
+            <div class="col-6 col-sm-3">
+              <a class="footer__logo text-light" href="">contact Info:</a>
+            </div>
+            <div class="col-6 col-sm-3">
+              <a class="footer__logo text-light" href="../index.html"
+                >MS Tours</a
+              >
+            </div>
+            <div class="col-6 col-sm-3">
+              <a class="text-light" href="../tours.html">Tours</a>
+            </div>
+            <div class="col-6 col-sm-3">
+              <h3><a class="text-light" href="#"></a></h3>
+            </div>
+
             <!-- Force next columns to break to new line at md breakpoint and up -->
             <div class="w-100 d-none d-sm"></div>
-            <div class="col-6 col-sm-3"><a class="footer__logo text-light" href="">info@mstours.co.uk</a></div>
-            <div class="col-6 col-sm-3"><a href="../about.html" class="text-light">About</a></div>
-            <div class="col-6 col-sm-3"><a class="text-light" href="../Multidaytours.html">Multi day Tours</a></div>
-            <div class="col-6 col-sm-3"><a href="../Reviews.html" class="text-light">Reviews</a>
-        </div>
-      
+            <div class="col-6 col-sm-3">
+              <a class="footer__logo text-light" href="">info@mstours.co.uk</a>
+            </div>
+            <div class="col-6 col-sm-3">
+              <a href="../about.html" class="text-light">About</a>
+            </div>
+            <div class="col-6 col-sm-3">
+              <a class="text-light" href="../Multidaytours.html"
+                >Multi day Tours</a
+              >
+            </div>
+            <div class="col-6 col-sm-3">
+              <a href="../Reviews.html" class="text-light">Reviews</a>
+            </div>
+
             <div class="w-100 d-none d-sm"></div>
-            <div class="col-6 col-sm-3"><a class="footer__logo text-light" href="">+447813120634</a></div>
-            <div class="col-6 col-sm-3"><a href="../contact.html" class="text-light">Contact</a></div>
-            <div class="col-6 col-sm-3"><a class="text-light" href="../daytours.html"><p>Day Tours</p></a></div>
-            <div class="col-6 col-sm-3"><a href="../gallery.html" class="text-light">Gallery</a></div>
+            <div class="col-6 col-sm-3">
+              <a class="footer__logo text-light" href="">+447813120634</a>
+            </div>
+            <div class="col-6 col-sm-3">
+              <a href="../contact.html" class="text-light">Contact</a>
+            </div>
+            <div class="col-6 col-sm-3">
+              <a class="text-light" href="../daytours.html"><p>Day Tours</p></a>
+            </div>
+            <div class="col-6 col-sm-3">
+              <a href="../gallery.html" class="text-light">Gallery</a>
+            </div>
           </div>
-        
-      
-       
         </div>
-       </footer>
-      
-       <div class="p-2 bg-secondary"></div>
-      
-       <footer class="px-1 bg-dark text-light">
-        <nav class="navbar navbar-dark navbar-expand-lg bg-dark px-3 ">
+      </footer>
+
+      <div class="p-2 bg-secondary"></div>
+
+      <footer class="px-1 bg-dark text-light">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark px-3">
           <div class="container-fluid">
-                <ul class="navbar-nav flex-grow-1 px-3">
-                    <a class="nav-link active text-light text-start px-3" aria-current="page" href="../TermsAndConditions.html"><p>Terms And Conditions</p></a>
-                    <a class="nav-link text-light text-end px-3" href="#"><p>MS tours@2023</p></a>
-                </ul>
-              </div>
+            <ul class="navbar-nav flex-grow-1 px-3">
+              <a
+                class="nav-link active text-light text-start px-3"
+                aria-current="page"
+                href="../TermsAndConditions.html"
+                ><p>Terms And Conditions</p></a
+              >
+              <a class="nav-link text-light text-end px-3" href="#"
+                ><p>MS tours@2023</p></a
+              >
+            </ul>
+          </div>
         </nav>
-       </footer>
-      </section>
+      </footer>
+    </section>
 
     <script src="../app/JS/script.js"></script>
     <script
